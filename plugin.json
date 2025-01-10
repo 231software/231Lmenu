@@ -1,16 +1,16 @@
 {
-    "name":"Full Moon Platform plugin example",
+    "name":"231Lmenu",
     "main":"index",
-    "description":"A plugin developed with Full Moon Platform.",
+    "description":"231L专用主菜单插件",
     "build_dir":"dist",
-    "data_path":"fmp_plugin_example",
+    "data_path":"231Lmenu",
     "src_dir":"src",
-    "plugin_dir_name":"fmp_plugin_example",
+    "plugin_dir_name":"231Lmenu",
     "supported_platforms":{
         "mode":"bl",
         "list":[]
     },
-    "permissionRoot":"fmppluginexample",
+    "permissionRoot":"231lmenu",
     "features":[],
     "priorities":{
         "default":[
