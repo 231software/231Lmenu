@@ -8,7 +8,7 @@
     "plugin_dir_name":"231Lmenu",
     "supported_platforms":{
         "mode":"bl",
-        "list":[]
+        "list":["esjse"]
     },
     "permissionRoot":"231lmenu",
     "features":[],
