@@ -16,7 +16,8 @@ import {Logger,InitEvent, JsonFile,
     SimpleForm,
     SimpleFormButton,
     runcmd,
-    SimpleFormSession
+    SimpleFormSession,
+    InternalPermission
 } from "../lib/index.js";
 import {data_path} from "../lib/plugin_info.js"
 const globalConf = new JsonFile(data_path+"/config.json");
@@ -94,7 +95,7 @@ function menuConfFromConfig(conf:any):MenuConfig{
 menucontents.init("menus",[
     { 
         name: "main", 
-        permission: 0, 
+        permission: false, 
         title: "", 
         caption: "", 
         contents: [
@@ -158,7 +159,7 @@ const maincmd=new Command(
         else{
             Logger.error("该指令为打开菜单指令，只能加入游戏并在游戏内使用")
         }
-    }
+    },InternalPermission.Any
 )
 
 //主菜单ui
